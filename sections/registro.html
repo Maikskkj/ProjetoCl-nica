@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section class="registro">
+        <div class="secao__esquerda">
+            <h3 class="subtitulo__esquerda">Venha fazer parte da melhor!</h3>
+            <h2 class="titulo__esquerda">CONTA GRATUITA</h2>
+            <p class="paragrafo__esquerda">Texto que voces decidem ou chat gpt, acho que pode ser uma mensagem falando respeitamos a lei de proteção de dados ou sla qualquer coisa</p>
+        </div>
+        <div class="secao__form">
+            <h2 class="titulo__form">CRIAR CONTA</h2>
+            <p class="paragrafo__form">Texto que voces decidem ou chat gpt, acho que pode ser uma mensagem falando respeitamos a lei de proteção de dados ou sla qualquer coisa</p>
+            <form class="formulario" action="">
+                <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf">
+                <input class="formulario__item" type="password" placeholder="Senha" id="senha">
+                <input class="formulario__item" type="password" placeholder="Confirmar Senha" id="confirmarSenha">
+                <input class="formulario__item" type="email" placeholder="exemplo@gmail.com" id="email">
+                <input class="formulario__item" type="date" placeholder="Data de nascimento" id="">
+                <div class="formulario__others">
+                    <input class="formulario__check" type="checkbox" id="check">
+                    <p class="formulario__check__text">Aceito os <a class="formulario__registro" href="#">Termos e Política</a></p>
+                </div>
+                <button class="formulario__button" onclick="pegarDados()">CRIAR CONTA</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

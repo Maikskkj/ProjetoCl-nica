@@ -1,0 +1,57 @@
+.cabecalho {
+    background-color: var(--principal);
+    display: flex;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+.cabecalho .logo {
+    width: 3%;
+}
+
+.cabecalho .logo__nome {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--branco);
+    margin-left: 1rem;
+
+}
+
+.cabecalho .cabecalho__nav {
+    margin-left: 10rem;
+    margin-right: auto;
+}
+
+.cabecalho .cabecalho__nav .cabecalho__link {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 0 0.8rem;
+    font-weight: 500;
+}
+
+.cabecalho .cabecalho__menu {
+    width: 6%;
+}
+
+.cabecalho .cabecalho__menu .menu__link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem 1rem;
+   
+
+}
+
+.cabecalho .cabecalho__menu .icone__login {
+    width: 50%;
+    padding: 1rem;
+}
+
+.cabecalho .cabecalho__nav .cabecalho__link:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    font-size: 1.1em;
+}

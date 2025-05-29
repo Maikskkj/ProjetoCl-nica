@@ -1,0 +1,94 @@
+.registro {
+    display: grid;
+    padding: 11% 15%;
+    grid-template-columns: 50% 50%;
+    
+    background-color: var(--cinza);
+}
+
+.registro .secao__esquerda {
+    align-items: center;
+    text-align: center;
+    padding: 12.6rem 1rem;
+    background-color: var(--principal);
+}
+
+.registro .secao__esquerda .subtitulo__esquerda{
+    color: var(--branco);
+    font-weight: 600;
+}
+
+.registro .secao__esquerda .titulo__esquerda {
+    font-size: 3em;
+    margin: 0.2em 0;
+    font-weight: 900;
+    color: var(--branco);
+}
+
+.registro .secao__esquerda .paragrafo__esquerda {
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 0.6em;
+}
+
+.registro .secao__form {
+    background-color: var(--branco);
+    padding: 5rem 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+.registro .secao__form .titulo__form {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: var(--principal);
+}
+
+.registro .secao__form .paragrafo__form {
+    color: var(--cinza);
+    font-size: 0.6em;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.registro .secao__form .formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.registro .secao__form .formulario .formulario__item {
+    padding: 1em;
+    margin: 0.5rem;
+    background-color: var(--cinza);
+    border: none;
+    box-shadow: -5px 0px 0 var(--principal);
+}
+
+.registro .secao__form .formulario .formulario__others {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.registro .secao__form .formulario .formulario__others .formulario__check__text {
+font-weight: 300;
+font-size: 0.8em;
+margin-right: auto;
+}
+
+.registro .secao__form .formulario .formulario__others .formulario__registro {
+    text-decoration: none;
+    color: var(--principal);
+    font-weight: 600;
+    font-size: 0.8em; 
+}
+
+.registro .secao__form .formulario .formulario__button {
+    background-color: var(--principal);
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 600;
+}

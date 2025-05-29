@@ -1,0 +1,26 @@
+@import url(/styles/cabecalho.css);
+@import url(/styles/login.css);
+@import url(/styles/registro.css);
+
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #eeeeee;
+    --principal: #28A7F4;
+    --secundario: #2BE2EB;
+    --secundario-detalhes: #80D0EA;
+    --principal-detalhes: #80D0EA;
+    --branco-gelo: #6ed8e4;
+    --font-principal: "Inter";
+    
+
+}
+
+body {
+    color: var(--preto);
+    background-color: var(--branco);
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--font-principal);
+}
