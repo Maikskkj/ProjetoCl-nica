@@ -13,12 +13,13 @@
 }
 
 .login .secao__esquerda .subtitulo__esquerda{
+    font-size: 1.5em;
     color: var(--branco);
     font-weight: 600;
 }
 
 .login .secao__esquerda .titulo__esquerda {
-    font-size: 3em;
+    font-size: 4em;
     margin: 0.2em 0;
     font-weight: 900;
     color: var(--branco);
@@ -27,7 +28,8 @@
 .login .secao__esquerda .paragrafo__esquerda {
     color: var(--branco);
     font-weight: 300;
-    font-size: 0.6em;
+    font-size: 0.9em;
+    line-height: 1.50em
 }
 
 .login .secao__form {
@@ -39,12 +41,12 @@
 
 .login .secao__form .titulo__form {
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: var(--principal);
 }
 
 .login .secao__form .paragrafo__form {
-    color: var(--cinza);
+    color: var(--cinzaescuro);
     font-size: 0.6em;
     font-weight: 300;
     margin: 1rem 0;
@@ -56,11 +58,12 @@
 }
 
 .login .secao__form .formulario .formulario__item {
-    padding: 1em;
-    margin: 0.5rem;
+    padding: 1.5em;
+    margin: 1.0rem;
     background-color: var(--cinza);
     border: none;
-    box-shadow: -5px 0px 0 var(--principal);
+    border-radius: 15px;
+    
 }
 
 .login .secao__form .formulario .formulario__others {
@@ -82,12 +85,23 @@ margin-right: auto;
     font-size: 0.8em; 
 }
 
+.login .secao__form .formulario .formulario__others .formulario__recuperarsenha {
+    text-decoration: none;
+    color: var(--principal);
+    font-weight: 600;
+    font-size: 0.8em; 
+}
+
 .login .secao__form .formulario .formulario__button {
     background-color: var(--principal);
     border: none;
-    border-radius: 20px;
-    padding: 1em;
+    border-radius: 30px;
+    padding: 1.5em;
     color: var(--branco);
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 300;
+    width: 300px;
+    margin-left: 25%;
+    margin-right: 0;
+    display: block;   
 }
