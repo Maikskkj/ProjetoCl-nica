@@ -66,6 +66,8 @@
 .banner-inicial {
     position: relative;
     width: 100%;
+    background: url('caminho/para/imagem.jpg') no-repeat center center;
+    background-size: cover;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -76,25 +78,28 @@
 }
 
 .banner-img {
-    width: 100%;    
+    width: 65%;    
     max-width: 1200px;
     height: auto;
     display: block;
     border-radius: 70px;
-    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
-    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.2) 100%);
+    mask-image: radial-gradient(circle, rgba(195, 195, 195, 0.796) 60%, rgba(0,0,0,0.2) 100%);
+   
 }
 
 .banner-texto{
-    position: absolute;
-  font-size: 1.5em;
+  position: absolute;
+  bottom: 1.2em;
+  left: 40rem;
+  font-size: 2.0em;
   color: var(--branco);
   font-weight: 900;
-  line-height: 1.2em;
-  background-color: rgba(0, 0, 0, 0.4);
+  line-height: 1.5em;
+  background-color: rgba(0, 0, 0, 0.125);
+  display: block;
   padding: 1rem;
   border-radius: 8px;
   display: flex;
-  bottom: 2rem;
-  left: 2rem; 
+  max-width: 800px;
 }
