@@ -1,0 +1,105 @@
+1. Introdução
+A Puramed, empresa dedicada à prestação de serviços de agendamento de consultas médicas, respeita a privacidade e a segurança dos dados de seus usuários. Este Termo de Políticas (“Termo”) tem como objetivo esclarecer as condições para o uso do nosso site [inserir URL do site], a coleta, o tratamento, o armazenamento e a proteção dos dados pessoais fornecidos pelos usuários, especialmente para a realização do pré-agendamento de consultas médicas.
+
+Ao acessar e utilizar nosso site, você, usuário, concorda integralmente com os termos aqui estabelecidos e autoriza o tratamento dos seus dados pessoais conforme descrito neste documento.
+
+2. Definições
+Usuário: pessoa física que acessa o site da Puramed para realizar pré-agendamento de consultas médicas.
+
+Dados Pessoais: qualquer informação relacionada a pessoa identificada ou identificável, como nome, CPF, telefone, e-mail, endereço, informações de saúde, entre outros.
+
+Dados Sensíveis: dados pessoais sobre saúde, informações médicas e outros dados que merecem proteção especial.
+
+Pré-Agendamento: etapa inicial onde o usuário fornece seus dados para que a Puramed possa organizar a consulta médica solicitada.
+
+Puramed: empresa responsável pela gestão do site e do serviço de agendamento.
+
+3. Finalidade da Coleta de Dados
+3.1. Os dados pessoais coletados têm como finalidade exclusiva o pré-agendamento de consultas médicas, possibilitando:
+
+Contato para confirmação do agendamento;
+
+Organização da agenda médica;
+
+Atendimento personalizado e eficiente;
+
+Cumprimento de obrigações legais e regulatórias.
+
+3.2. Nenhum dado será utilizado para outras finalidades sem o consentimento prévio e expresso do usuário.
+
+4. Quais Dados São Coletados
+4.1. Para realizar o pré-agendamento, coletamos os seguintes dados pessoais:
+
+Nome completo;
+
+Data de nascimento;
+
+CPF ou outro documento de identificação;
+
+Telefone para contato;
+
+E-mail;
+
+Endereço residencial (quando necessário);
+
+Informações básicas sobre saúde relevantes para o agendamento.
+
+4.2. Eventualmente, podem ser solicitados dados adicionais necessários para o correto atendimento, sempre respeitando a legislação aplicável.
+
+5. Tratamento e Armazenamento dos Dados
+5.1. Os dados pessoais fornecidos pelo usuário são armazenados em servidores seguros, com acesso restrito e protegidos por medidas técnicas e administrativas para evitar acessos não autorizados, vazamentos, alterações ou perdas.
+
+5.2. O tempo de armazenamento será estritamente necessário para a realização do agendamento, atendimento e cumprimento de obrigações legais, e será deletado ou anonimizado após esse período, salvo se houver necessidade de manutenção conforme legislação vigente.
+
+6. Compartilhamento de Dados
+6.1. A Puramed não comercializa, aluga ou compartilha seus dados pessoais com terceiros para fins de marketing ou quaisquer outras finalidades que não sejam essenciais à prestação do serviço.
+
+6.2. Os dados poderão ser compartilhados com profissionais da saúde, clínicas, hospitais ou outros parceiros para a efetivação do agendamento e atendimento médico, sempre respeitando a confidencialidade e a legislação aplicável.
+
+6.3. Também podemos compartilhar dados quando exigido por lei, ordem judicial ou autoridade competente.
+
+7. Direitos dos Usuários
+7.1. Conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD), o usuário tem os seguintes direitos em relação aos seus dados pessoais:
+
+Confirmar a existência do tratamento;
+
+Acessar os dados coletados;
+
+Corrigir dados incompletos, inexatos ou desatualizados;
+
+Solicitar anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;
+
+Solicitar a portabilidade dos dados a outro fornecedor de serviço;
+
+Revogar o consentimento dado para o tratamento dos dados;
+
+Solicitar a eliminação dos dados pessoais, ressalvadas as hipóteses legais para manutenção.
+
+7.2. Para exercer seus direitos, o usuário poderá entrar em contato através do e-mail [inserir e-mail de contato].
+
+8. Segurança da Informação
+8.1. A Puramed adota medidas técnicas, administrativas e organizacionais adequadas para proteger os dados pessoais contra acessos não autorizados, perda, alteração, divulgação ou destruição.
+
+8.2. As informações são armazenadas em ambiente seguro com uso de criptografia, firewall, autenticação e outras tecnologias de segurança da informação.
+
+9. Responsabilidades do Usuário
+9.1. O usuário se compromete a fornecer dados verdadeiros, atualizados e completos.
+
+9.2. O usuário é responsável por manter em sigilo suas credenciais de acesso e dados pessoais fornecidos.
+
+9.3. É proibido o uso do site para fins ilegais ou contrários às disposições deste Termo.
+
+10. Cookies e Tecnologias Similares
+10.1. Utilizamos cookies para melhorar a navegação, personalizar conteúdos e coletar informações estatísticas sobre o uso do site.
+
+10.2. O usuário pode configurar seu navegador para recusar cookies ou alertá-lo sobre a sua utilização, porém, isso pode afetar o funcionamento adequado do site.
+
+11. Alterações no Termo de Políticas
+11.1. A Puramed poderá modificar este Termo a qualquer momento, para adequar-se a novas legislações, exigências regulatórias, alterações na plataforma ou melhores práticas.
+
+11.2. As alterações serão publicadas no site e, quando relevantes, notificaremos os usuários para que tomem ciência.
+
+12. Legislação Aplicável e Foro
+12.1. Este Termo será regido pela legislação brasileira, especialmente pela Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+
+12.2. Fica eleito o foro da comarca de [cidade e estado], para dirimir quaisquer questões relacionadas a este Termo, com renúncia a qualquer outro, por mais privilegiado que seja.

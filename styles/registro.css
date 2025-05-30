@@ -2,7 +2,6 @@
     display: grid;
     padding: 11% 15%;
     grid-template-columns: 50% 50%;
-    
     background-color: var(--cinza);
 }
 
@@ -11,6 +10,8 @@
     text-align: center;
     padding: 12.6rem 1rem;
     background-color: var(--principal);
+    background-image: url(../img/IMG-20250528-WA00011.jpg);
+    background-repeat: no-repeat;
 }
 
 .registro .secao__esquerda .subtitulo__esquerda{
@@ -96,4 +97,8 @@ margin-right: auto;
     margin-left: 25%;
     margin-right: 0;
     display: block;
+}
+
+.none {
+    display: none;
 }

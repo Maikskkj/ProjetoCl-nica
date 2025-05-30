@@ -13,9 +13,9 @@
 <body>
     <section class="registro">
         <div class="secao__esquerda">
-            <h3 class="subtitulo__esquerda">Venha fazer parte da melhor!</h3>
-            <h2 class="titulo__esquerda">CADASTRE-SE</h2>
-            <p class="paragrafo__esquerda">Ainda não tem uma conta? Cadastre-se agora e tenha acesso fácil aos seus agendamentos, histórico de consultas e muito mais. É rápido, seguro e pensado para você!</p>
+            <h3 class="subtitulo__esquerda none">Venha fazer parte da melhor!</h3>
+            <h2 class="titulo__esquerda none">CADASTRE-SE</h2>
+            <p class="paragrafo__esquerda none">Ainda não tem uma conta? Cadastre-se agora e tenha acesso fácil aos seus agendamentos, histórico de consultas e muito mais. É rápido, seguro e pensado para você!</p>
         </div>
         <div class="secao__form">
             <h2 class="titulo__form">CRIAR CONTA</h2>
@@ -24,19 +24,28 @@
                 <h3>DADOS PESSOAIS</h3>
                 <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf">
                 <input class="formulario__item" type="text" placeholder="Nome Completo" id="nome">
-                <input class="formulario__item" type="password" placeholder="Senha" id="senha">
-                <input class="formulario__item" type="password" placeholder="Confirmar Senha" id="confirmarSenha">
                 <input class="formulario__item" type="date" placeholder="Data de nascimento" id="">
             </form>
             <form class="formulario formulario__outro" action="">
                 <h3>INFORMAÇÕES DE CONTATO</h3>
-                <input class="formulario__item" type="tel" placeholder="Telefone" id="telefone">
                 <input class="formulario__item" type="tel" placeholder="Celular" id="celular">
                 <input class="formulario__item" type="email" placeholder="E-mail" id="email">
                 <input class="formulario__item" type="email" placeholder="Confirme o Email" id="confirmarEmail">
-                <input class="formulario__check" type="checkbox" id="check">
+                <input class="formulario__item" type="password" placeholder="Senha" id="senha">
+                <input class="formulario__item" type="password" placeholder="Confirmar Senha" id="confirmarSenha">
+            </form>
+            <form class="formulario formulario__outro" action="">
+                <h3>ENDEREÇO</h3>
+                <input class="formulario__item" type="text" maxlength="8" placeholder="CEP" id="cep">
+                <input class="formulario__item" type="text" placeholder="Endereço" id="endereco">
+                <input class="formulario__item" type="number" maxlength="6" placeholder="Número" id="numero">
+                <input class="formulario__item" type="text" placeholder="Complemento" id="complemento">
+                <input class="formulario__item" type="text" placeholder="Bairro" id="bairro">
+                <input class="formulario__item" type="text" maxlength="2" placeholder="UF" id="uf">
+                <input class="formulario__item" type="text" placeholder="Cidade" id="cidade">
                 <div class="formulario__others">
-                    <p class="formulario__check__text">Aceito os <a class="formulario__registro" href="#">Termos e Política</a></p>
+                    <input class="formulario__check" type="checkbox" id="check">
+                    <p class="formulario__check__text">Aceito os <a class="formulario__registro" href="../TERMO DE POLITICA.txt">Termos e Política</a></p>
                 </div>
                 <button class="formulario__button" onclick="pegarDados()">CRIAR CONTA</button>
             </form>
