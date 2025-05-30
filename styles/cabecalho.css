@@ -1,9 +1,14 @@
 .cabecalho {
     background-color: var(--principal);
+    background-image: url('./img/banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 1rem 6rem;
 }
+
 
 .cabecalho .logo {
     width: 3%;
