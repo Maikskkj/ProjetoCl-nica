@@ -10,7 +10,7 @@
 }
 
 .cabecalho .logo__nome {
-    font-size: 2m;
+    font-size: 2em;
     font-weight: 800;
     color: var(--branco);
     margin-left: 1rem;
