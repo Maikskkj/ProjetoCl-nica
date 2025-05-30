@@ -104,4 +104,14 @@ margin-right: auto;
     margin-left: 25%;
     margin-right: 0;
     display: block;   
+    margin-bottom: 1rem;
+}
+
+.login .secao__form .mantenha__concetado {
+    display: flex;
+    margin: 0.4rem;
+}
+
+.login .secao__form .formulario .formulario__others .formulario__registro {
+    margin-right: auto;
 }

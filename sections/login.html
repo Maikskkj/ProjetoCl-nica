@@ -23,10 +23,13 @@
             <form class="formulario" action="">
                 <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf">
                 <input class="formulario__item" type="password" placeholder="Senha" id="senha">
-                   <button class="formulario__button" onclick="pegarDados()">ENTRAR</button>
+                <div class="mantenha__concetado">
+                <input class="formulario__check" type="checkbox" id="check">
+                <p class="formulario__check__text">Mantenha Me Conectado</p>
+                </div>
+                
+                <button class="formulario__button" onclick="pegarDados()">ENTRAR</button>
                 <div class="formulario__others">
-                    <input class="formulario__check" type="checkbox" id="check">
-                    <p class="formulario__check__text">Mantenha Me Conectado</p>
                     <a class="formulario__registro" href="../sections/registro.html">Registre-se</a>
                     <a class="formulario__recuperarsenha" href="../sections/esquecia_senha.html">Esqueceu a sua senha?</a>
                 </div>
