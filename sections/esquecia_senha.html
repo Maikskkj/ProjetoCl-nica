@@ -3,36 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Recuperar Senha - Puramed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <section class="registro">
         <div class="secao__esquerda">
-            <h3 class="subtitulo__esquerda">Venha fazer parte da melhor!</h3>
-            <h2 class="titulo__esquerda">CONTA GRATUITA</h2>
-            <p class="paragrafo__esquerda">Texto que voces decidem ou chat gpt, acho que pode ser uma mensagem falando respeitamos a lei de proteção de dados ou sla qualquer coisa</p>
+            <h2 class="titulo__esquerda">NÃO SE PREOCUPE</h2>
+            <h3 class="subtitulo__esquerda">Vamos ajudá-lo a recuperar sua senha com segurança.</h3>
         </div>
         <div class="secao__form">
-            <h2 class="titulo__form">CRIAR CONTA</h2>
-            <p class="paragrafo__form">Texto que voces decidem ou chat gpt, acho que pode ser uma mensagem falando respeitamos a lei de proteção de dados ou sla qualquer coisa</p>
-            <form class="formulario" action="">
-                <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf">
-                <input class="formulario__item" type="password" placeholder="Senha" id="senha">
-                <input class="formulario__item" type="password" placeholder="Confirmar Senha" id="confirmarSenha">
-                <input class="formulario__item" type="email" placeholder="exemplo@gmail.com" id="email">
-                <input class="formulario__item" type="date" placeholder="Data de nascimento" id="">
-                <input class="formulario__check" type="checkbox" id="check">
+            <h2 class="titulo__form">RECUPERAR SENHA</h2>
+            <p class="paragrafo__form">
+                Respeitamos a sua privacidade. Seus dados serão utilizados apenas para validação e redefinição de senha, em conformidade com a Lei Geral de Proteção de Dados (LGPD).
+            </p>
+            <form class="formulario" onsubmit="return recuperarSenha()">
+                <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf" required>
+                <input class="formulario__item" type="email" placeholder="exemplo@gmail.com" id="email" required>
+                <input class="formulario__item" type="password" placeholder="Nova Senha" id="novaSenha" required>
+                <input class="formulario__item" type="password" placeholder="Confirmar Nova Senha" id="confirmarSenha" required>
+
                 <div class="formulario__others">
-                    <p class="formulario__check__text">Aceito os <a class="formulario__registro" href="#">Termos e Política</a></p>
+                    <input class="formulario__check" type="checkbox" id="check" required>
+                    <p class="formulario__check__text">
+                        Aceito os <a class="formulario__registro" href="#">Termos e Política</a>
+                    </p>
                 </div>
-                <button class="formulario__button" onclick="pegarDados()">CRIAR CONTA</button>
+
+                <button class="formulario__button" type="submit">REDEFINIR SENHA</button>
             </form>
         </div>
     </section>
+    
+    <script>
+        function recuperarSenha() {
+            const cpf = document.getElementById('cpf').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const novaSenha = document.getElementById('novaSenha').value;
+            const confirmarSenha = document.getElementById('confirmarSenha').value;
+            const check = document.getElementById('check').checked;
+
+            // Validação dos campos
+            if (!cpf || !email || !novaSenha || !confirmarSenha) {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+
+            if (novaSenha.length < 6) {
+                alert("A senha deve ter no mínimo 6 caracteres.");
+                return false;
+            }
+
+            if (novaSenha !== confirmarSenha) {
+                alert("As senhas não coincidem.");
+                return false;
+            }
+
+            if (!check) {
+                alert("Você deve aceitar os Termos e Política.");
+                return false;
+            }
+
+            // Simulação de envio para servidor
+            alert("Senha redefinida com sucesso! Verifique seu e-mail para confirmação.");
+            
+            // Aqui você poderia redirecionar ou limpar os campos
+            // window.location.href = "login.html";
+
+            return false; // Impede o envio real do formulário (substituir por back-end depois)
+        }
+    </script>
 </body>
 </html>
