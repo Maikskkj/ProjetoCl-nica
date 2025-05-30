@@ -1,11 +1,13 @@
 .cabecalho {
     background-color: var(--principal);
-    background-image: url('./img/banner.svg');
+    background-image: url('../img/banner.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
+    justify-content: start;
+    gap: 10rem;
     padding: 1rem 6rem;
 }
 
@@ -23,8 +25,8 @@
 }
 
 .cabecalho .cabecalho__nav {
-    margin-left: 10rem;
-    margin-right: auto;
+    margin-left: auto;
+    display: flex;
 }
 
 .cabecalho .cabecalho__nav .cabecalho__link {
