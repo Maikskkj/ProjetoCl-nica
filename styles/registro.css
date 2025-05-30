@@ -10,23 +10,25 @@
     text-align: center;
     padding: 12.6rem 1rem;
     background-color: var(--principal);
-    background-image: url(../img/IMG-20250528-WA00011.jpg);
+    background-image: url('../img/criarconta.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.registro .secao__esquerda .subtitulo__esquerda{
+.registro .secao__registro .subtitulo__registro{
     color: var(--branco);
     font-weight: 600;
 }
 
-.registro .secao__esquerda .titulo__esquerda {
+.registro .secao__registro .titulo__registro {
     font-size: 4em;
     margin: 0.2em 0;
     font-weight: 900;
     color: var(--branco);
 }
 
-.registro .secao__esquerda .paragrafo__esquerda {
+.registro .secao__registro .paragrafo__registro {
     color: var(--branco);
     font-weight: 300;
     font-size: 0.9em;
@@ -41,7 +43,7 @@
 }
 
 .registro .secao__form .titulo__form {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 2.5em;
     color: var(--principal);
 }

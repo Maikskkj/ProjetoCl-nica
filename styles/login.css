@@ -10,6 +10,10 @@
     text-align: center;
     padding: 12.6rem 1rem;
     background-color: var(--principal);
+    background-image: url('../img/bem_vindo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .login .secao__esquerda .subtitulo__esquerda{
