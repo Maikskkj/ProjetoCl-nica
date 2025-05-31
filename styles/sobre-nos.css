@@ -1,5 +1,6 @@
 .sobre__nos {
     margin-top: 5rem;
+    font-size: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,19 +14,21 @@
     border-radius: 14px;
 }
 
-.sobre__nos .container__textos__sobre .titulo__sobre {
+.sobre__nos .titulo__sobre {
     text-align: center;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 700;
-    color: var(--branco);
-    margin: 1rem;
+    color: var(--preto);
+    margin: 2rem;
 }
 
-.sobre__nos .container__textos__sobre .texto__sobre {
-    font-weight: 500;
-    font-size: 1em;
-    color: var(--branco);
-    margin-bottom: 1rem;
+.sobre__nos .texto__sobre {
+    font-weight: 20;
+    font-size: 0.5em;
+    color: var(--preto);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-align: justify;
 }
 
 .sobre__nos .subtitulo__sobre {
@@ -40,3 +43,15 @@
 html {
     scroll-behavior: smooth;
 }
+
+.mao_medico { 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+}
+.container_imagem {
+    display: flex;
+    justify-content: center;
+}	
