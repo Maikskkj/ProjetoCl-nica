@@ -26,7 +26,7 @@
     margin: 1rem 0;
     margin-left: 5rem;
     margin-top: 26%;
-    color: var(--branco);
+    color: var(--cinzaescuro);
 }
 
 .banner__inicial .banner__texto__container, .container__mensagem .banner__texto {
@@ -50,14 +50,14 @@
     font-size: 2.5em;
     font-weight: 700;
     margin: 0 0 1rem;
-    color: var(--branco);
+    color: var(--cinzaescuro);
     margin-left: 5rem;
 }
 
 .banner__inicial .container__mensagem .banner__slogan {
     font-weight: 800;
     font-size: 1.5em;
-    color: var(--branco);
+    color: var(--cinzaescuro);
     margin-left: 5rem;
 }
 
