@@ -4,8 +4,7 @@
     background-size: cover;
     background-position: center;
     width: 99.2vw;
-    height: 100vh;
-    margin-top: 1rem;
+    height: 10vh 1rem;
     -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
     mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
 }
@@ -65,18 +64,3 @@
 .unico {
     margin-left: 5rem;
 }
-
-
-
-
-
-
-/*.banner-img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    border-radius: 70px;
-    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
-    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
-}*/
