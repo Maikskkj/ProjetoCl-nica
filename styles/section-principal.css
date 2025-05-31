@@ -57,7 +57,7 @@
 .banner__inicial .container__mensagem .banner__slogan {
     font-weight: 800;
     font-size: 1.5em;
-    color: var(--principal);
+    color: var(--branco);
     margin-left: 5rem;
 }
 
