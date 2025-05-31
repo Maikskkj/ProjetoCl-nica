@@ -17,8 +17,8 @@
             <a class="cabecalho__link" href="/sections/sobre nos.html">Quem Somos</a>
             <a class="cabecalho__link" href="#">Contato</a>
         </nav>
-        <div class="cabecalho__menu">
-            <a class="menu__link" href="./sections/login.html"><img class="icone__login" src="./img/PERFIL (1).svg" alt="Icone Log-in">Entrar</a>
+        <div class="cabecalho__menu" id="menuUsuario">
+            <!-- preenchido dinamicamente -->
         </div>
     </header>
     <section class="banner__inicial">
@@ -35,6 +35,12 @@
             <h3 class="banner__slogan">Seja muito bem-vindo à PuraMed — onde cuidar de você é a nossa missão!</h3>
         </div>
     </section>
+    <footer></footer>
+
+    <script src="/scripts/login.js"></script>
+    <script>
+        verificarLogin();
+    </script>
    <footer class="rodape">
     <p class="texto__rodape">© 2025 PuraMed | Todos os direitos reservados.</p>
     <p class="texto__rodape">Desenvolvido por Hugo e Clara.</p>

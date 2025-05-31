@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-In</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log-In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <section class="login">
-        <div class="secao__esquerda">
-            <h3 class="subtitulo__esquerda">Conecte-se à sua Saúde</h3>
-            <h2 class="titulo__esquerda">BEM-VINDO</h2>
-            <p class="paragrafo__esquerda">Acesse sua conta e tenha o controle dos seus agendamentos médicos de forma rápida, segura e prática. Sua saúde está em boas mãos.</p>
+  <section class="login">
+    <div class="secao__esquerda">
+      <h3 class="subtitulo__esquerda">Conecte-se à sua Saúde</h3>
+      <h2 class="titulo__esquerda">BEM-VINDO</h2>
+      <p class="paragrafo__esquerda">Acesse sua conta e tenha o controle dos seus agendamentos médicos de forma rápida, segura e prática. Sua saúde está em boas mãos.</p>
+    </div>
+    <div class="secao__form">
+      <h2 class="titulo__form">ENTRAR</h2>
+      <p class="paragrafo__form">
+        Na PuraMed, a sua privacidade é uma prioridade. Todos os seus dados estão protegidos de acordo com a Lei Geral de Proteção de Dados (LGPD). Utilizamos suas informações apenas para oferecer um serviço seguro, eficiente e personalizado. Garantimos total sigilo, segurança e transparência no tratamento dos seus dados.
+      </p>
+      <form class="formulario">
+        <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf" oninput="mascaraCPF(this)">
+        <input class="formulario__item" type="password" placeholder="Senha" id="senha">
+        <div class="mantenha__concetado">
+          <input class="formulario__check" type="checkbox" id="check">
+          <p class="formulario__check__text">Mantenha Me Conectado</p>
         </div>
-        <div class="secao__form">
-            <h2 class="titulo__form">ENTRAR</h2>
-            <p class="paragrafo__form">Na PuraMed, a sua privacidade é uma prioridade. Todos os seus dados estão protegidos de acordo com a Lei Geral de Proteção de Dados (LGPD). Utilizamos suas informações apenas para oferecer um serviço seguro, eficiente e personalizado. Garantimos total sigilo, segurança e transparência no tratamento dos seus dados.</p>
-            <form class="formulario" action="">
-                <input class="formulario__item" type="text" placeholder="CPF" maxlength="14" id="cpf">
-                <input class="formulario__item" type="password" placeholder="Senha" id="senha">
-                <div class="mantenha__concetado">
-                <input class="formulario__check" type="checkbox" id="check">
-                <p class="formulario__check__text">Mantenha Me Conectado</p>
-            </div>
-                <button class="formulario__button" onclick="pegarDados()">ENTRAR</button> 
-                <div class="formulario__others">
-                    <a class="formulario__registro" href="../sections/registro.html">Registre-se</a>
-                    <a class="formulario__recuperarsenha" href="../sections/esquecia_senha.html">Esqueceu a sua senha?</a>
-                </div>
-             
-            </form>
+        <button class="formulario__button" onclick="fazerLogin(event)">ENTRAR</button> 
+        <div class="formulario__others">
+          <a class="formulario__registro" href="../sections/registro.html">Registre-se</a>
+          <a class="formulario__recuperarsenha" href="../sections/esquecia_senha.html">Esqueceu a sua senha?</a>
         </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="/scripts/login.js"></script>
     </section>
     <footer class="rodape">
     <p class="texto__rodape">© 2025 PuraMed | Todos os direitos reservados.</p>
