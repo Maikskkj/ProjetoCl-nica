@@ -22,35 +22,35 @@
         </div>
 
     </header>
-    <section class="agendamento">
-        <form class="agendamento__form">
-            <label class="campo__grupo">
-                <span class="texto">Área Desejada</span>
-                <select class="area" id="areaDesejada">
-                    <option value="selecione">Selecione</option>
-                    <option value="cred1">Pediatria</option>
-                    <option value="cred2">Clínico Geral</option>
-                    <option value="cred3">Ginicologísta</option>
-                    <option value="cred4">Urologista</option>
-                    <option value="cred5">Dentista</option>
-                    <option value="cred6">Pisciquiatra</option>
-                    <option value="cred7">Cirurgião</option>
+    <section class="container__agendamento">
+        <div class="agendamento">
+            <form class="agendamento__form">
+                <label class="campo__grupo">
+                    <span class="texto__span">Área Desejada</span>
+                    <select class="area" id="areaDesejada">
+                        <option value="selecione">Selecione</option>
+                        <option value="cred1">Pediatria</option>
+                        <option value="cred2">Clínico Geral</option>
+                        <option value="cred3">Cardiologia</option>
+                        <option value="cred4">Neurologia</option>
+                        <option value="cred5">Otorrinolaringologia</option>
+                        <option value="cred6">Dermatologia</option>
+                        <option value="cred7">Oftamologia</option>
+                        <option value="cred8">Ginicologia</option>
+                    </select>
                 </label>
-            </select>
-            <span>Descreva brevemente seus sintomas</span>
-            <input type="text" placeholder="Descreva brevemente seus sintomas" maxlength="500" id="descricaoSintomas">
-        </form>
-
-    
+                <span class="texto__span">Descreva brevemente seus sintomas</span>
+                <input class="desc__sintomas" type="text" placeholder="Descreva brevemente seus sintomas" maxlength="500" id="descricaoSintomas">
+                <button onclick="enviarRelatorio" type="button" class="botao__enviar">Enviar</button>
+            </form>
+        </div>
+    <div class="resposta">
+        <h2 class="resposta__numero">SEU NÚMERO DE PROTOCOLO DE ATENDIMENTO É:</h2>
+        <div class="tela__resposta">
+            <label class="protocolo__numero" id="numeroProtocolo">000000</label>
+        </div>
+    </div>
     </section>
-
-    <script src="/scripts/login.js"></script>
-    <script>
-        verificarLogin();
-    </script>
-    <footer class="rodape">
-    <p class="texto__rodape">© 2025 PuraMed | Todos os direitos reservados.</p>
-    <p class="texto__rodape">Desenvolvido por Hugo e Clara.</p>
-</footer>
+ 
 </body>
 </html>
