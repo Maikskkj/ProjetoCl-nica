@@ -2,13 +2,13 @@
     background-color: var(--principal);
     background-image: url('../img/banner.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 10rem;
-    padding: 1rem 6rem;
+    padding: 1.5rem 6rem;
 }
 
 
@@ -37,7 +37,20 @@
 }
 
 .cabecalho .cabecalho__menu {
-    width: 6%;
+    width: 4%;
+    border: 3px solid var(--branco);
+    border-radius: 25px;
+    padding-right: 4%;
+
+}
+
+.cabecalho .cabecalho__menu:hover {
+    transition: all 0.3s ease;
+    background-color: var(--principal);
+    padding-right: 4%;
+    border: 2px solid var(--branco);
+    border-radius: 50px;
+    padding-right: 4%;
 }
 
 .cabecalho .cabecalho__menu .menu__link {
@@ -53,7 +66,7 @@
 }
 
 .cabecalho .cabecalho__menu .icone__login {
-    width: 50%;
+    width: 60%;
     padding: 1rem;
 }
 
@@ -61,23 +74,4 @@
     transition: all 0.3s ease;
     box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
     font-size: 1.1em;
-}
-
-.banner-inicial {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-    
-}
-
-.banner-img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    border-radius: 70px;
-    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
-    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
 }

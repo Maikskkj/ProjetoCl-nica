@@ -1,0 +1,42 @@
+.sobre__nos {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20% 0 20%;
+}
+
+.sobre__nos .container__textos__sobre {
+    background-color: var(--cinza-azulado);
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+.sobre__nos .container__textos__sobre .titulo__sobre {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--branco);
+    margin: 1rem;
+}
+
+.sobre__nos .container__textos__sobre .texto__sobre {
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+.sobre__nos .subtitulo__sobre {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 12px;
+    background-color: var(--cinza-azulado);
+}
+
+html {
+    scroll-behavior: smooth;
+}

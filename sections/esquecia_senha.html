@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <section class="registro">
+    <section class="reset__senha">
         <div class="secao__esquerda">
-            <h2 class="titulo__esquerda">NÃO SE PREOCUPE</h2>
-            <h3 class="subtitulo__esquerda">Vamos ajudá-lo a recuperar sua senha com segurança.</h3>
+            <div class="esquerda__textos">
+                <h2 id="textoTitulo" class="titulo__esquerda">NÃO SE PREOCUPE</h2>
+                <h3 id="textoParagrafo" class="subtitulo__esquerda">Vamos ajudá-lo a recuperar sua senha com segurança.</h3>
+            </div>
         </div>
         <div class="secao__form">
             <h2 class="titulo__form">RECUPERAR SENHA</h2>
@@ -38,44 +40,7 @@
             </form>
         </div>
     </section>
-    
-    <script>
-        function recuperarSenha() {
-            const cpf = document.getElementById('cpf').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const novaSenha = document.getElementById('novaSenha').value;
-            const confirmarSenha = document.getElementById('confirmarSenha').value;
-            const check = document.getElementById('check').checked;
 
-            // Validação dos campos
-            if (!cpf || !email || !novaSenha || !confirmarSenha) {
-                alert("Por favor, preencha todos os campos.");
-                return false;
-            }
-
-            if (novaSenha.length < 6) {
-                alert("A senha deve ter no mínimo 6 caracteres.");
-                return false;
-            }
-
-            if (novaSenha !== confirmarSenha) {
-                alert("As senhas não coincidem.");
-                return false;
-            }
-
-            if (!check) {
-                alert("Você deve aceitar os Termos e Política.");
-                return false;
-            }
-
-            // Simulação de envio para servidor
-            alert("Senha redefinida com sucesso! Verifique seu e-mail para confirmação.");
-            
-            // Aqui você poderia redirecionar ou limpar os campos
-            // window.location.href = "login.html";
-
-            return false; // Impede o envio real do formulário (substituir por back-end depois)
-        }
-    </script>
+<script src="../apps/password-reset.js"></script>
 </body>
 </html>
