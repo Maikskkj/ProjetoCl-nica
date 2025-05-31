@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="bodycomclass">
     <header class="cabecalho">
         <nav class="cabecalho__nav">
             <a class="cabecalho__link" href="../index.html">Home</a>
@@ -23,9 +23,16 @@
 
     </header>
     <section class="container__agendamento">
+        <div class="tela__resposta">
+            <h2 class="resposta__numero">SEU NÚMERO DE PROTOCOLO DE ATENDIMENTO É:</h2>
+            <label class="protocolo__numero" id="numeroProtocolo">000000</label>
+        </div>
+    </div>
+    <div class="resposta">
         <div class="agendamento">
             <form class="agendamento__form">
                 <label class="campo__grupo">
+                    <h2 class="titulofodase">AGENDAMENTO</h2>
                     <span class="texto__span">Área Desejada</span>
                     <select class="area" id="areaDesejada">
                         <option value="selecione">Selecione</option>
@@ -41,15 +48,10 @@
                 </label>
                 <span class="texto__span">Descreva brevemente seus sintomas</span>
                 <input class="desc__sintomas" type="text" placeholder="Descreva brevemente seus sintomas" maxlength="500" id="descricaoSintomas">
+                <input type="date" class="calenadrio" id="selecioneData">
                 <button type="button" class="botao__enviar">Enviar</button>
             </form>
         </div>
-    <div class="resposta">
-        <h2 class="resposta__numero">SEU NÚMERO DE PROTOCOLO DE ATENDIMENTO É:</h2>
-        <div class="tela__resposta">
-            <label class="protocolo__numero" id="numeroProtocolo">000000</label>
-        </div>
-    </div>
     </section>
 
     <script src="../scripts/agendamento.js"></script>
