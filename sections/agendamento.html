@@ -17,9 +17,10 @@
             <a class="cabecalho__link" href="#">Histórico de Consultas</a>
             <a class="cabecalho__link" href="#">Ajuda</a>
         </nav>
-        <div class="cabecalho__menu">
-            <a class="menu__link" href="../sections/login.html"><img class="icone__login" src="../img/PERFIL (1).svg" alt="Icone Log-in">Entrar</a>
+        <div class="cabecalho__menu" id="menuUsuario">
+            <!-- preenchido dinamicamente -->
         </div>
+
     </header>
     <section class="agendamento">
         <form class="agendamento__form">
@@ -42,5 +43,10 @@
 
     
     </section>
+
+    <script src="/scripts/login.js"></script>
+    <script>
+        verificarLogin();
+    </script>
 </body>
 </html>
