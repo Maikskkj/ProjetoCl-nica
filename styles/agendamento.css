@@ -30,7 +30,7 @@
 }
 
 .resposta .agendamento__form .desc__sintomas {
-    padding: 5em;
+    padding: 1em;
 }
 
 .container__agendamento .agendamento .agendamento__form .botao__enviar {
@@ -55,7 +55,7 @@
 
 .container__agendamento .resposta .tela__resposta {
     background-color: var(--branco);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 15px;
     box-shadow: 3px 3px 14px 12px rgba(145, 193, 255, 0.5);
     margin: 1rem;
@@ -112,3 +112,23 @@ display: flex;
 .bodycomclass {
     background-color: var(--cinza);
 }
+
+.desc__sintomas {
+    text-orientation: upright; /* mantém os caracteres na posição vertical normal */
+}
+
+.desc__sintomas {
+    width: 350px;
+    height: 170px;
+    padding: 1em;
+    margin: 0.5rem;
+    background-color: var(--cinza);
+    border-radius: 15px;
+    resize: none; /* opcional, impede o usuário de redimensionar */
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-top: 1em;        /* Reduz o espaço no topo */
+    padding-bottom: 1em;       /* Deixa mais espaço embaixo, se quiser */
+    vertical-align: top;       /* Garante que o texto vá para cima */
+}
+
