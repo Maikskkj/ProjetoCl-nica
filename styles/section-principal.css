@@ -3,64 +3,95 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 99.2vw;
-    height: 10vh 1rem;
+    width: 100vw;
+    height: 100vh;
     -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
     mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* empurra o conteúdo para baixo */
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem; /* ajuste a distância do rodapé */
+    box-sizing: border-box;
+}
+
+.banner__subtitulo {
+    font-size: 2.5em; /* tamanho do subtítulo */
+    font-weight: 700;
+    color: var(--cinzaescuro);
+    margin: 0 0 1rem 0;
+
 }
 
 .banner__inicial .banner__texto__container {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    text-align: center;
-    padding: 1.5rem;
-    
-    
+    align-items: flex-start; /* alinhar à esquerda */
+    text-align: left; /* texto alinhado à esquerda */
+    max-width: 600px; /* largura máxima para melhor leitura */
 }
 
 .banner__inicial .banner__texto__container .banner__titulo {
-    color: var(--preto);
+    color: var(--cinzaescuro);
     font-size: 4em;
     font-weight: 900;
-    margin: 1rem 0;
-    margin-left: 5rem;
-    margin-top: 26%;
-    color: var(--cinza-azulado);
+    margin: 0 0 1rem 0;
 }
 
-.banner__inicial .banner__texto__container, .container__mensagem .banner__texto {
+.banner__inicial .banner__texto__container,
+.banner__inicial .banner__texto__container .banner__slogan {
+    color: var(--branco);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+.container__mensagem .banner__texto {
     color: var(--branco);
     font-size: 1em;
     font-weight: 600;
-    margin: 0.5rem;
-    margin-left: 5rem;
-
+    margin: 0.5rem 0;
 }
 
 .banner__inicial .container__mensagem {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding: 1%;
-    margin-left: 5rem;
+    align-items: flex-start;
+    padding: 0;
+    margin: 1rem 0 0 0;
 }
 
 .banner__inicial .container__mensagem .banner__subtitulo {
-    font-size: 2.5em;
+    font-size: 2.5em; /* aumentei de 2.5em para 3.5em */
     font-weight: 700;
-    margin: 0 0 1rem;
-    color: var(--cinza-azulado);
-    margin-left: 5rem;
+    margin: 0 0 1rem 0;
+    color: var(--cinzaescuro);
 }
+
 
 .banner__inicial .container__mensagem .banner__slogan {
     font-weight: 800;
-    font-size: 1.5em;
-    color: var(--principal);
-    margin-left: 5rem;
+    font-size: 2em;
+    color: var(--cinzaescuro);
+    margin: 0;
+    padding: 1em 0;
 }
 
-.unico {
-    margin-left: 5rem;
+/* Para telas menores, ajusta padding e tamanhos */
+@media (max-width: 768px) {
+    .banner__inicial {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        height: auto; /* permite crescimento vertical */
+    }
+    .banner__inicial .banner__texto__container .banner__titulo {
+        font-size: 2.5em;
+    }
+    .banner__inicial .container__mensagem .banner__subtitulo {
+        font-size: 1.8em;
+    }
+    .banner__inicial .container__mensagem .banner__slogan {
+        font-size: 1.2em;
+    }
 }
