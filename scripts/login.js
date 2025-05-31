@@ -17,13 +17,18 @@ function verificarLogin() {
     if (menuUsuario) {
         if (usuarioLogado) {
             menuUsuario.innerHTML = `
-                <span class="usuario-cpf">Olá, ${usuarioLogado}</span>
-                <button class="botao-logout" onclick="fazerLogout()">Sair</button>
+                <div class="usuario-logado">
+                    <span class="usuario-cpf">${usuarioLogado}</span>
+                    <a class="botao-logout" onclick="fazerLogout()">
+                        <img src="../img/logout.png" alt="Sair">
+                    </a>
+                </div>
             `;
         } else {
             menuUsuario.innerHTML = `
                 <a class="menu__link" href="../sections/login.html">
-                    <img class="icone__login" src="../img/PERFIL (1).svg" alt="Icone Log-in"> Entrar
+                    <img class="icone__login" src="../img/PERFIL (1).svg" alt="Icone Log-in">
+                    <span class="entrar__login">Entrar</span>
                 </a>
             `;
         }
