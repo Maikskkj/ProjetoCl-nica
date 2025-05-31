@@ -1,28 +1,23 @@
-
 .banner__inicial {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 1rem;
-    background-color: var(--cinza);
-    
-}
-.banner__inicial .banner__img {
-
-}
-
-.banner__inicial .banner__img .image__section {
-    width: 100%;
-    border-radius: 15px;
-    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.2) 100%);
-    mask-image: radial-gradient(circle, rgba(0, 0, 0,1) 60%, rgba (0, 0, 0, 0.2) 100%);
+    background-image: url(/img/banner_inicio.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 99.2vw;
+    height: 100vh;
+    margin-top: 1rem;
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 100%);
 }
 
 .banner__inicial .banner__texto__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     text-align: center;
     padding: 1.5rem;
+    
+    
 }
 
 .banner__inicial .banner__texto__container .banner__titulo {
@@ -30,34 +25,45 @@
     font-size: 4em;
     font-weight: 900;
     margin: 1rem 0;
+    margin-left: 5rem;
+    margin-top: 26%;
     color: var(--cinza-azulado);
 }
 
-.banner__inicial .banner__texto__container .banner__texto {
-    color: var(--preto);
+.banner__inicial .banner__texto__container, .container__mensagem .banner__texto {
+    color: var(--branco);
     font-size: 1em;
     font-weight: 600;
     margin: 0.5rem;
+    margin-left: 5rem;
 
 }
 
-.banner__inicial .banner__texto__container .container__mensagem {
+.banner__inicial .container__mensagem {
     display: flex;
     flex-direction: column;
-    padding: 12%;
+    align-items: start;
+    padding: 1%;
+    margin-left: 5rem;
 }
 
-.banner__inicial .banner__texto__container .container__mensagem .banner__subtitulo {
+.banner__inicial .container__mensagem .banner__subtitulo {
     font-size: 2.5em;
     font-weight: 700;
     margin: 0 0 1rem;
     color: var(--cinza-azulado);
+    margin-left: 5rem;
 }
 
-.banner__inicial .banner__texto__container .container__mensagem .banner__slogan {
+.banner__inicial .container__mensagem .banner__slogan {
     font-weight: 800;
     font-size: 1.5em;
     color: var(--principal);
+    margin-left: 5rem;
+}
+
+.unico {
+    margin-left: 5rem;
 }
 
 
