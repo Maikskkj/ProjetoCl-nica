@@ -37,20 +37,70 @@
 }
 
 .cabecalho .cabecalho__menu {
-    width: 4%;
-    border: 3px solid var(--branco);
-    border-radius: 25px;
-    padding-right: 4%;
-
+    width: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
-.cabecalho .cabecalho__menu:hover {
+.usuario-cpf{
+    margin-right: 6px;
+}
+
+.cabecalho .cabecalho__menu img{
+    filter: invert();
+}
+
+.cabecalho .cabecalho__menu:hover{
     transition: all 0.3s ease;
-    background-color: var(--principal);
     padding-right: 4%;
-    border: 2px solid var(--branco);
-    border-radius: 50px;
     padding-right: 4%;
+}
+
+/* Container geral */
+.usuario-logado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 130px; /* largura inicial */
+    transition: width 0.3s ease;
+    border: 3px solid var(--branco);
+    border-radius: 25px;
+    padding: 12px;
+    color: white;
+    white-space: nowrap;
+}
+
+/* Ao passar o mouse: aumenta largura */
+.usuario-logado:hover {
+    width: 220px;
+}
+
+/* CPF do usuário */
+.usuario-cpf {
+    margin-right: 6px;
+    transition: opacity 0.3s ease;
+}
+
+/* Ícone de logout oculto inicialmente */
+.botao-logout {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Exibir ícone ao passar mouse */
+.usuario-logado:hover .botao-logout {
+    display: block;
+}
+
+/* Estilizar imagem do logout */
+.botao-logout img {
+    width: 24px;
+    filter: invert();
+    cursor: pointer;
 }
 
 .cabecalho .cabecalho__menu .menu__link {
@@ -61,17 +111,61 @@
     color: var(--branco);
     text-align: center;
     padding: 1rem 1rem;
-   
-
+    border: 3px solid var(--branco);
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
 .cabecalho .cabecalho__menu .icone__login {
-    width: 60%;
-    padding: 1rem;
+    width: 28px;
+    filter: invert(0);
 }
 
 .cabecalho .cabecalho__nav .cabecalho__link:hover {
     transition: all 0.3s ease;
     box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
     font-size: 1.1em;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    color: var(--branco);
+    border: 3px solid var(--branco);
+    border-radius: 25px;
+    padding: 0.6rem 1rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 48px; /* largura inicial (apenas ícone visível) */
+}
+
+/* Ícone de login */
+.icone__login {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    flex-shrink: 0;
+}
+
+/* Texto escondido inicialmente */
+.entrar__login {
+    opacity: 0;
+    margin-left: 8px;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+}
+
+/* Efeito ao passar o mouse */
+.menu__link:hover {
+    width: 150px;
+    background-color: var(--principal);
+}
+
+/* Mostrar texto ao hover */
+.menu__link:hover .entrar__login {
+    opacity: 1;
+    visibility: visible;
 }
