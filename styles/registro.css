@@ -16,24 +16,26 @@
     background-position: center;
 }
 
-.registro .secao__registro .subtitulo__registro{
+.registro .secao__esquerda .subtitulo__esquerda {
     color: var(--branco);
     font-weight: 600;
 }
 
-.registro .secao__registro .titulo__registro {
+.registro .secao__esquerda .titulo__esquerda {
     font-size: 4em;
     margin: 0.2em 0;
     font-weight: 900;
     color: var(--branco);
 }
 
-.registro .secao__registro .paragrafo__registro {
+.registro .secao__esquerda .paragrafo__esquerda {
     color: var(--branco);
     font-weight: 300;
     font-size: 0.9em;
     line-height: 1.50em
 }
+
+/*Lado da direita do grid*/
 
 .registro .secao__form {
     background-color: var(--branco);
@@ -58,6 +60,7 @@
 .registro .secao__form .formulario {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .registro .secao__form .formulario .formulario__item {
@@ -80,7 +83,7 @@ font-size: 0.8em;
 margin-right: auto;
 }
 
-.registro .secao__form .formulario .formulario__others .formulario__registro {
+.registro .secao__form .formulario .formulario__others .formulario__check__text .formulario__termos {
     text-decoration: none;
     color: var(--principal);
     font-weight: 600;
@@ -96,11 +99,24 @@ margin-right: auto;
     font-size: 1em;
     font-weight: 300;
     width: 300px;
-    margin-left: 25%;
-    margin-right: 0;
-    display: block;
+    margin: 2% auto;
+
 }
 
 .none {
-    display: none;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .registro {
+        padding: 1% 1%;
+    }
+
+    .registro .secao__esquerda .subtitulo__esquerda{
+        margin-top: 70%;
+    }
+
+    .registro .secao__esquerda .titulo__esquerda {
+        font-size: 3.5em;
+    }
 }

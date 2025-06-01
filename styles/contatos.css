@@ -1,9 +1,6 @@
-*{
-    margin: 0;
-    overflow-x: hidden;
-}
-
-.pagina{
-    width: 100vw;
-    height: 100vh;
+.sei__la {
+    text-align: center;
+    align-items: center;
+    margin: 20vw;
+    font-size: 5em;
 }

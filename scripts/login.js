@@ -5,15 +5,8 @@ function fazerLogout() {
 
 function verificarLogin() {
     const usuarioLogado = localStorage.getItem("usuarioLogado");
-
-    // Se estiver em uma página protegida e não estiver logado, redireciona:
-    if (!usuarioLogado && window.location.pathname.includes("agendamento")) {
-        localStorage.setItem("rotaDeRetorno", window.location.pathname);
-        window.location.href = "../sections/login.html";
-    }
-
-    // Atualiza o cabeçalho conforme login
     const menuUsuario = document.getElementById('menuUsuario');
+
     if (menuUsuario) {
         if (usuarioLogado) {
             menuUsuario.innerHTML = `
@@ -35,30 +28,43 @@ function verificarLogin() {
     }
 }
 
+function verificarAcessoAgendamento(event) {
+    const usuarioLogado = localStorage.getItem("usuarioLogado");
+
+    if (!usuarioLogado) {
+        event.preventDefault(); // impede a navegação padrão
+        localStorage.setItem("rotaDeRetorno", "/sections/agendamento.html");
+        window.location.href = "/sections/login.html";
+    }
+    // Se estiver logado, o link segue normalmente.
+}
+
 function fazerLogin(event) {
-      event.preventDefault();
+    event.preventDefault();
 
-      const cpf = document.getElementById("cpf").value;
-      const senha = document.getElementById("senha").value;
+    const cpf = document.getElementById("cpf").value;
+    const senha = document.getElementById("senha").value;
 
-      const cpfValido = "000.000.000-00";
-      const senhaValida = "1234";
+    const cpfValido = "000.000.000-00";
+    const senhaValida = "1234";
 
-      if (cpf === cpfValido && senha === senhaValida) {
+    if (cpf === cpfValido && senha === senhaValida) {
         localStorage.setItem("usuarioLogado", cpf);
+
         const rota = localStorage.getItem("rotaDeRetorno") || "../index.html";
         localStorage.removeItem("rotaDeRetorno");
+
         window.location.href = rota;
-      } else {
+    } else {
         alert("CPF ou senha inválidos!");
-      }
     }
+}
 
 function mascaraCPF(input) {
-      let valor = input.value.replace(/\D/g, "");
-      if (valor.length > 11) valor = valor.slice(0, 11);
-      valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
-      valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
-      valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-      input.value = valor;
+    let valor = input.value.replace(/\D/g, "");
+    if (valor.length > 11) valor = valor.slice(0, 11);
+    valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+    valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+    valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    input.value = valor;
 }

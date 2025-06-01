@@ -17,42 +17,8 @@
     box-sizing: border-box;
 }
 
-.banner__subtitulo {
-    font-size: 2.5em; /* tamanho do subtítulo */
-    font-weight: 700;
-    color: var(--cinzaescuro);
-    margin: 0 0 1rem 0;
-
-}
-
-.banner__inicial .banner__texto__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* alinhar à esquerda */
-    text-align: left; /* texto alinhado à esquerda */
-    max-width: 600px; /* largura máxima para melhor leitura */
-}
-
-.banner__inicial .banner__texto__container .banner__titulo {
-    color: var(--cinzaescuro);
-    font-size: 4em;
-    font-weight: 900;
-    margin: 0 0 1rem 0;
-}
-
-.banner__inicial .banner__texto__container,
-.banner__inicial .banner__texto__container .banner__slogan {
-    color: var(--branco);
-    font-size: 1.5em;
-    font-weight: 600;
-    margin: 0.5rem 0;
-}
-.container__mensagem .banner__texto {
-    color: var(--branco);
-    font-size: 1em;
-    font-weight: 600;
-    margin: 0.2rem 0;
-    margin-bottom: auto;
+.logo__inicial {
+    display: none;
 }
 
 .banner__inicial .container__mensagem {
@@ -64,12 +30,20 @@
 }
 
 .banner__inicial .container__mensagem .banner__subtitulo {
-    font-size: 2.5em; /* aumentei de 2.5em para 3.5em */
+    font-size: 2.5em; /* tamanho do subtítulo */
     font-weight: 700;
-    margin: 0 0 1rem 0;
     color: var(--cinzaescuro);
+    margin: 0 0 1rem 0;
+
 }
 
+.banner__inicial .container__mensagem .banner__texto {
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0.2rem 0;
+    margin-bottom: auto;
+}
 
 .banner__inicial .container__mensagem .banner__slogan {
     font-weight: 800;
@@ -77,6 +51,18 @@
     color: var(--cinzaescuro);
     margin: 0;
     padding: 1em 0;
+}
+
+
+@media (max-width: 1024px) {
+ .banner__inicial {   
+    background-position: right;
+}
+ .logo__inicial {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50%;
+    }
 }
 
 /* Para telas menores, ajusta padding e tamanhos */
@@ -95,4 +81,8 @@
     .banner__inicial .container__mensagem .banner__slogan {
         font-size: 1.2em;
     }
+
+   
 }
+
+

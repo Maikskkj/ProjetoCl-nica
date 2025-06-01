@@ -36,6 +36,7 @@
     line-height: 1.50em
 }
 
+/*Segungo lado do grid*/
 .login .secao__form {
     background-color: var(--branco);
     padding: 5rem 3rem;
@@ -70,30 +71,17 @@
     
 }
 
-.login .secao__form .formulario .formulario__others {
+.login .secao__form .formulario .mantenha__concetado {
     display: flex;
     align-items: center;
-    text-align: center;
+    margin: 0.4rem;
 }
 
-.login .secao__form .formulario .formulario__others .formulario__check__text {
+.login .secao__form .formulario .mantenha__concetado .formulario__check__text {
 font-weight: 300;
 font-size: 0.8em;
 margin-right: auto;
-}
 
-.login .secao__form .formulario .formulario__others .formulario__registro {
-    text-decoration: none;
-    color: var(--principal);
-    font-weight: 600;
-    font-size: 0.8em; 
-}
-
-.login .secao__form .formulario .formulario__others .formulario__recuperarsenha {
-    text-decoration: none;
-    color: var(--principal);
-    font-weight: 600;
-    font-size: 0.8em; 
 }
 
 .login .secao__form .formulario .formulario__button {
@@ -110,11 +98,30 @@ margin-right: auto;
     margin-bottom: 1rem;
 }
 
-.login .secao__form .mantenha__concetado {
+.login .secao__form .formulario .formulario__others {
     display: flex;
-    margin: 0.4rem;
+    align-items: center;
+    text-align: center;
 }
 
 .login .secao__form .formulario .formulario__others .formulario__registro {
+    text-decoration: none;
+    color: var(--principal);
+    font-weight: 600;
+    font-size: 0.8em; 
     margin-right: auto;
 }
+
+.login .secao__form .formulario .formulario__others .formulario__recuperarsenha {
+    text-decoration: none;
+    color: var(--principal);
+    font-weight: 600;
+    font-size: 0.8em; 
+}
+
+@media (max-width: 1024px) {
+    .login {
+        padding: 35% 7% 35% 7%;
+    }
+}
+ 

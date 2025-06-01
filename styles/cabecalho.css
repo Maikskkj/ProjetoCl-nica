@@ -3,26 +3,13 @@
     background-image: url('../img/banner.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: right;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 10rem;
     padding: 1.5rem 6rem;
     height: 12vh;
-}
-
-
-.cabecalho .logo {
-    width: 3%;
-}
-
-.cabecalho .logo__nome {
-    font-size: 2em;
-    font-weight: 800;
-    color: var(--branco);
-    margin-left: 1rem;
-
 }
 
 .cabecalho .cabecalho__nav {
@@ -169,4 +156,18 @@
 .menu__link:hover .entrar__login {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 1024px) {
+.cabecalho {
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__link:hover {
+    width: 100px;
+    background-color: var(--principal);
+}
 }
