@@ -33,6 +33,21 @@ function verificarCamposObrigatorios() {
         alert('Digite um e-mail válido.');
         return;
     }
+
+    if (email !== valor('confirmarEmail')) {
+        alert('Os emails não coincidem.');
+        return;
+    }
+
+    if (valor('senha').length  < 4) {
+        alert('A senha deve ter no minimo 4 caracteres');
+        return;
+    }
+
+    if (valor('senha') !== valor('confirmarSenha')) {
+        alert('As senhas não coincidem');
+        return;
+    }
     
     pegarDados(); 
     window.location.href = "login.html";
@@ -70,12 +85,13 @@ function fazerLogout() {
 function verificarLogin() {
     const usuarioLogado = localStorage.getItem("usuarioLogado");
     const menuUsuario = document.getElementById('menuUsuario');
+    const nomeUsuario = dadosSalvos.nome.split(" ")[0];
 
     if (menuUsuario) {
         if (usuarioLogado) {
             menuUsuario.innerHTML = `
                 <div class="usuario-logado">
-                    <span class="usuario-cpf">${usuarioLogado}</span>
+                    <span class="usuario-cpf">${nomeUsuario}</span>
                     <a class="botao-logout" onclick="fazerLogout()">
                         <img src="../img/logout.png" alt="Sair">
                     </a>
